@@ -17,6 +17,7 @@ There's a mode to keep it on while plugged in; I turned that on too.
 * Arrival times for busses going inbound / outbound from stops specified
 * Alternating C and F termperatures
 * Rotating images of nature, water
+* Increses brightness from 6am-5pm
 
 ## Secrets file
 The secrets file, `secrets.js`, stored at the root, has the following format:
