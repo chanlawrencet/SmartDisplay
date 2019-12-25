@@ -18,7 +18,6 @@ There's a mode to keep it on while plugged in; I turned that on too.
 * Alternating C and F termperatures
 * Rotating images of nature, water
 * Increses brightness from 6am-5pm
-
 * Also note: really customized for Fire 7; probably won't work with other tablets because of different resolutions and pixel densities. I probably could have made this responsive, but really didn't feel like it...
 ## Secrets file
 The secrets file, `secrets.js`, stored at the root, has the following format:
