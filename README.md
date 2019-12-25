@@ -7,6 +7,7 @@ There's a mode to keep it on while plugged in; I turned that on too.
 
 ![Screenshot of app](https://raw.githubusercontent.com/chanlawrencet/SmartDisplay/master/screenshot.png)
 ![Image of app](https://github.com/chanlawrencet/SmartDisplay/blob/master/image.jpg)
+(trust me, it looks better without the camera showing the pixels)
 
 ## Features
 * Big persistent time
