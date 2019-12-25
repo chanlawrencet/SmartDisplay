@@ -6,6 +6,7 @@ What if I made my own? I bought a $30 Amazon fire tablet and wrote an app to dis
 There's a mode to keep it on while plugged in; I turned that on too.
 
 ![Screenshot of app](https://raw.githubusercontent.com/chanlawrencet/SmartDisplay/master/screenshot.png)
+![Image of app](https://raw.githubusercontent.com/chanlawrencet/SmartDisplay/master/image.png)
 
 ## Features
 * Big persistent time
