@@ -18,7 +18,7 @@ There's a mode to keep it on while plugged in; I turned that on too.
 * Rotating images of nature, water
 
 ## Secrets file
-The secrets file has the following format:
+The secrets file, `secrets.js`, stored at the root, has the following format:
 ```
 export const apiKeyNYT = 'ABCDE';
 export const apiKeyDarkSky = 'ABCDE';
@@ -28,6 +28,12 @@ export const busStops = '11111,11111'; // comma separated MBTA stop IDs
 ```
 You don't need an api key for MBTA; their current rate limiting is totally fine for my purposes.
 
+## To run
+```
+yarn
+yarn start
+```
+You'll probably need expo-cli too.
 ## Refresh times
 * NYT - every 2 minutes, it pulls; changes the article every 7 seconds
 * DarkSky - every 2 minutes
