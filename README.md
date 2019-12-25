@@ -14,6 +14,8 @@ There's a mode to keep it on while plugged in; I turned that on too.
 * Weather for the next 6 hours
 * NYTimes national news feed
 * Arrival times for busses going inbound / outbound from stops specified
+* Alternating C and F termperatures
+* Rotating images of nature, water
 
 ## Secrets file
 The secrets file has the following format:
@@ -30,3 +32,9 @@ You don't need an api key for MBTA; their current rate limiting is totally fine 
 * NYT - every 2 minutes, it pulls; changes the article every 7 seconds
 * DarkSky - every 2 minutes
 * MBTA - every 10 seconds
+
+## Thanks
+* NYT for news data
+* DarkSky for weather data
+* MBTA for bus data
+* Unsplash for background images
