@@ -53,3 +53,9 @@ export const getMonthString = (monthInt) => {
       return 'Dec';
   }
 };
+
+export const getImageString = (icon) => {
+  const noPartly = icon.replace('partly-', '');
+  const newIcon = noPartly.replace('-', ',');
+  return newIcon
+};

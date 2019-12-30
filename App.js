@@ -6,6 +6,7 @@ import {BusTracker} from "./components/BusTracker";
 import {Weather} from "./components/Weather";
 import {News} from './components/News'
 import {WeatherMini} from "./components/WeatherMini";
+import {getImageString} from "./components/helpers"
 import * as Font from 'expo-font'
 import * as Brightness from 'expo-brightness';
 
@@ -110,7 +111,7 @@ class App extends React.Component{
       Brightness.setSystemBrightnessAsync(0.7);
     return(
       <ImageBackground
-        source={{uri: 'https://source.unsplash.com/featured/1600x900/?nature,water$dateString='.concat(dateString)}}
+        source={{uri: 'https://source.unsplash.com/featured/1600x900/?'.concat(getImageString(currWeatherIcon), '$dateString=', dateString)}}
         imageStyle={imgStyle}
         style={bigBoxStyle}>
         <View>
