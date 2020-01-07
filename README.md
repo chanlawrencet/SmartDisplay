@@ -17,7 +17,7 @@ There's a mode to keep it on while plugged in; I turned that on too.
 * NYTimes national news feed
 * Arrival times for busses going inbound / outbound from stops specified
 * Alternating C and F termperatures
-* Rotating images of nature, water
+* Rotating images based on current weather
 * Increses brightness from 6am-5pm
 * Also note: really customized for Fire 7; probably won't work with other tablets because of different resolutions and pixel densities. I probably could have made this responsive, but really didn't feel like it...
 ## Secrets file
