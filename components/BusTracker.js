@@ -1,7 +1,9 @@
 import React from 'react';
-import {Text, View } from 'react-native';
+import {Text, View, Button } from 'react-native';
 import {FontAwesome} from '@expo/vector-icons'
 import {busStops} from '../secrets'
+import { checkBusses } from "./BusAnnouncer";
+
 const column = {
   flex: 1,
   flexDirection: 'row',
@@ -53,11 +55,28 @@ export class BusTracker extends React.Component{
     this.state = {
       data: [],
       updatedTime: new Date(Date.now())   ,
-      updatedTimeDifference: 0
+      updatedTimeDifference: 0,
+      statedTrips: [],
     }
   }
 
+
+  // note: will also recycle when necessary
+  addStatedTrips(tripId){
+    let {statedTrips} = this.state;
+
+    if (statedTrips.length > 100){
+      statedTrips = [];
+    }
+
+    statedTrips.push(tripId);
+    this.setState({
+      statedTrips: statedTrips,
+    })
+  }
+
   requestBus = () => {
+    const {statedTrips} = this.state;
     this.setState({
       next: 'updating....'
     });
@@ -70,6 +89,7 @@ export class BusTracker extends React.Component{
           data: data.data,
           updatedTime: new Date(Date.now())
         });
+        checkBusses(data.data, statedTrips, this.addStatedTrips.bind(this));
       }).catch(x => {
       return('no data')
     })
@@ -79,7 +99,7 @@ export class BusTracker extends React.Component{
     this.requestBus();
     this.intervalID = setInterval(
       () => this.requestBus(),
-      10000
+      20000
     )
 
     this.intervalID2 = setInterval(
