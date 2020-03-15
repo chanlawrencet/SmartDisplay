@@ -9,6 +9,7 @@ import {WeatherMini} from "./components/WeatherMini";
 import {getImageString} from "./components/helpers"
 import * as Font from 'expo-font'
 import * as Brightness from 'expo-brightness';
+import { activateKeepAwake } from 'expo-keep-awake';
 
 const imgStyle = {
   opacity: 0.3
@@ -47,6 +48,7 @@ class App extends React.Component{
       currWeatherFeelsLike: -999,
       fontLoaded: false
     }
+    activateKeepAwake();
   }
 
   changeCurrWeather = (icon, temp, feels) => {
