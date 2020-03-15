@@ -76,7 +76,7 @@ export class Weather extends React.Component{
       <View>
         <View style={{backgroundColor:'black', height: 2, marginTop: 275}}/>
         <View style={{marginLeft: 20}}>
-          <Text style={{marginTop: 10, fontSize: todayWeatherSummary.length < 50 ? 50 : 33, fontFamily:'product-sans'}}>{todayWeatherSummary}
+          <Text style={{marginTop: 10, fontSize: todayWeatherSummary.length < 50 ? 50 : 25, fontFamily:'product-sans'}}>{todayWeatherSummary}
           </Text>
           <Text style={numberStyle} >
             <AntDesign name="arrowup" size={32} color="black" />
