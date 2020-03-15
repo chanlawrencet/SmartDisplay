@@ -34,7 +34,7 @@ export class HourlyWeather extends React.Component{
     const ampm = dateString >= 0 && dateString < 12 ? 'AM' : 'PM';
 
     return(
-      <View style={{borderColor: 'black', border: 4, flex:1, alignItems: 'center'}} key={date.toString()}>
+      <View style={{borderColor: 'black', border: 4, flex:1, alignItems: 'center'}} key={dateString + currHour.temperature + Math.random()}>
         <Image
           source={{uri:'https://darksky.net/images/weather-icons/'.concat(currHour.icon, '.png')}}
           style={iconStyle}

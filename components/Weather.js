@@ -85,7 +85,7 @@ export class Weather extends React.Component{
             {showF ? todayWeatherLow :toCelsius(todayWeatherLow)}{showF ? '°F' : '°C'}
           </Text>
           <View style={hourBox}>
-            {hourly.slice(0,8).map(currHour => <HourlyWeather currHour={currHour} showF={showF}/>)}
+            {hourly.slice(0,8).map(currHour => <HourlyWeather currHour={currHour} showF={showF} key={Math.random()}/>)}
           </View>
         </View>
       </View>
