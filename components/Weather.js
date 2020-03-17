@@ -63,6 +63,23 @@ export class Weather extends React.Component{
     })
   };
 
+  fontScaler(todayWeatherSummary){
+    const length = todayWeatherSummary.length;
+    if (length <= 36)
+      return 50;
+    else if (length <= 40)
+      return 40;
+    else if (length <= 45)
+      return 35;
+    else if (length <= 50)
+      return 31;
+    else if (length <= 55)
+      return 29;
+    else if (length <= 60)
+      return 26;
+    else
+      return 20;
+  }
 
   render() {
     const {
@@ -76,7 +93,7 @@ export class Weather extends React.Component{
       <View>
         <View style={{backgroundColor:'black', height: 2, marginTop: 275}}/>
         <View style={{marginLeft: 20}}>
-          <Text style={{marginTop: 10, fontSize: todayWeatherSummary.length < 50 ? 50 : 25, fontFamily:'product-sans'}}>{todayWeatherSummary}
+          <Text style={{marginTop: 10, fontSize: this.fontScaler(todayWeatherSummary), fontFamily:'product-sans'}}>{todayWeatherSummary}
           </Text>
           <Text style={numberStyle} >
             <AntDesign name="arrowup" size={32} color="black" />
