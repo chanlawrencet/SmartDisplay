@@ -130,7 +130,7 @@ export class BusTracker extends React.Component{
     const differenceMinutes = differenceMilliseconds * (1.6666666 * Math.pow(10, -5));
     const differenceMinutesRounded = Math.round((differenceMinutes - 0.999));
     return(
-      <View style={{  marginBottom: 50}} key={currBus.relationships.trip.data.id * differenceMinutes}>
+      <View style={{  marginBottom: 50}} key={currBus.relationships.trip.data.id}>
         <View style={column}>
           <View style={leftBox}>
             <Text style={busNumFont}>{currBus.relationships.route.data.id}</Text>
