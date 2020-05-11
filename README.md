@@ -42,6 +42,9 @@ You'll probably need expo-cli too.
 * DarkSky - every 2 minutes
 * MBTA - every 10 seconds
 
+## Next steps
+* Announce the time via a audio recording?
+
 ## Thanks
 * NYT for news data
 * DarkSky for weather data
